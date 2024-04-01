@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add the Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body style="background-color: #1f1f1f; color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Готов ли ты узнать горькую правду о КАИТ №20?</h1>
+                <p>Хорошо подумай, прежде чем продолжить</p>
+                <button class="btn btn-primary" style="background-color: #2a2a2a; border-color: #fff; color: #fff;" onclick="changeText()">Продолжить</button>
+            </div>
+        </div>  
+    </div>
+    <!-- Add the Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Showing other text after click on button -->
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        .fade-out {
+            animation: fadeOut 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <script>
+        function changeText() {
+            const h1 = document.querySelector('h1');
+            const p = document.querySelector('p');
+            const button = document.querySelector('button');
+
+            h1.textContent = 'КАИТ №20 - настоящая контора пидорасов';
+            p.textContent = 'Слушайте новый релиз Petr Nebukin, Mleck - Hell of Dekrait (feat. Y-COON and ROFILA) на всех площадках!';
+            button.style.display = 'none';
+
+            h1.classList.add('fade-in');
+            p.classList.add('fade-in');
+        }
+    </script>
+</body>
+</html>
