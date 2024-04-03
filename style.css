@@ -26,7 +26,7 @@
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00aaff, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #ff0000,#48ff00,#002bff);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -61,10 +61,19 @@
 }
 
 .fade-in {
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 500ms ease-in;
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 500ms ease-out;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
