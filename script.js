@@ -1,7 +1,3 @@
-if (/MSIE|Trident/.test(window.navigator.userAgent)) {
-    window.location.href = 'https://nebukin.tech/kait20-file/sysinfo.mp4';
-}
-
 const textcontainer = document.querySelector('div[class="text-container"]');
 const nextbutton = document.querySelector('button[name="continue"]');
 const readbutton = document.querySelector('button[name="read"]');
